@@ -103,14 +103,17 @@ class ChunkService:
 
                     "chunk_id": chunk_id,
 
+                    "paper_id": None,
+
                     "section": section_name,
 
-                    "text": " ".join(chunk_words),
+                    "page_number": 1,        # We'll improve this later
 
-                    "word_count": len(chunk_words)
+                    "word_count": len(chunk_words),
+
+                    "text": " ".join(chunk_words)
 
                 })
-
                 chunk_id += 1
 
                 start += chunk_size - overlap
