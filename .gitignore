@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# React
+node_modules/
+dist/
+
+# Environment
+.env
+
+# Uploaded papers
+backend/uploads/
+
+# Vector Database
+backend/vector_db/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
