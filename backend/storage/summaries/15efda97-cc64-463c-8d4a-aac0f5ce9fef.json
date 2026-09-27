@@ -1,0 +1,25 @@
+{
+    "paper_id": "15efda97-cc64-463c-8d4a-aac0f5ce9fef",
+    "summary": {
+        "title": "A mechanism for pi phase shifts in Little-Parks experiments: application to 4Hb-TaS2 and to 2H-TaS2 intercalated with chiral molecules",
+        "objective": "To propose an alternative, conventional explanation for the observed pi phase shifts in Little-Parks experiments on 4Hb-TaS2 and chiral molecule-intercalated 2H-TaS2 without requiring unconventional or exotic pairing mechanisms.",
+        "problem": "Recent Little-Parks experiments on layered superconductor descendants of 2H-TaS2 (specifically 4Hb-TaS2 and chiral molecule-intercalated 2H-TaS2) reported unusual pi phase shifts, which were previously interpreted as evidence of exotic chiral or multi-component superconductivity. However, these interpretations conflict with the observation of robust transition temperatures and disorder tolerance.",
+        "methodology": "Extend Kulik's theory of Josephson coupling through a tunneling barrier containing paramagnetic impurities by incorporating strong Ising-type spin-orbit coupling (SOC) and spin-momentum locking in single 1H-TaS2 layers. Analyze the effects of lattice defects like screw dislocations on layered superconducting rings.",
+        "datasets": "Not specified",
+        "architecture": "Not specified",
+        "results": "Demonstrated that Ising spin-momentum locking strongly suppresses spin-independent (normal) interlayer tunneling while spin-flip tunneling due to paramagnetic impurities remains robust, leading to a negative Josephson coupling (J < 0). Combined with screw dislocations or stacking faults, this negative coupling naturally generates pi phase shifts in Little-Parks experiments for about half of the samples.",
+        "limitations": "The precise microscopic origin of spin-flip scattering in the molecular intercalation case requires further understanding, though local moments near the molecule-TaS2 interface are plausible.",
+        "future_work": "Directly detect the presence or absence of the pi phase in the Josephson coupling using vertical SQUID measurements.",
+        "keywords": [
+            "Little-Parks effect",
+            "pi phase shift",
+            "Josephson coupling",
+            "transition metal dichalcogenides",
+            "4Hb-TaS2",
+            "chiral molecule intercalation",
+            "spin-orbit coupling",
+            "Ising superconductivity"
+        ]
+    },
+    "generated_at": "2026-09-27 20:28:23.663636"
+}

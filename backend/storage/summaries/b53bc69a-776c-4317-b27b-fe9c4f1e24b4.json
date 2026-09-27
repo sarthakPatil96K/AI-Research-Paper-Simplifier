@@ -1,0 +1,25 @@
+{
+    "paper_id": "b53bc69a-776c-4317-b27b-fe9c4f1e24b4",
+    "summary": {
+        "title": "FIGARO: Controllable Music Generation Using Expert and Learned Features",
+        "objective": "To introduce a controllable symbolic music generative framework that achieves fine-grained and global control by generating multi-track, multi-time-signature symbolic music conditioned on high-level expert and learned features via description-to-sequence learning.",
+        "problem": "Controlling the output of modern symbolic music generative models to match user expectations remains difficult, as prior methods are mostly limited to single-track/single-time-signature music, prompt-based conditioning that gets forgotten, or lack human-interpretable and fine-grained temporal control.",
+        "methodology": "The authors introduce description-to-sequence learning, a self-supervised framework where high-level features (descriptions) are extracted partition-wise (bar-by-bar) and used to train a sequence-to-sequence model to reconstruct the original piece. They use REMI+, an extension of the REMI representation incorporating instruments, time signatures, and higher temporal resolution (12 sub-beats per quarter note). Conditioning features combine hand-crafted 'expert descriptions' (time signature, note density, mean pitch, mean velocity, mean duration, instruments, chords) and 'learned descriptions' from a bar-level VQ-VAE. Evaluation includes fluency (perplexity), fidelity metrics (F1-score for chords/instruments, time signature accuracy, Macro Overlapping Area, NRMSE, cosine similarity for chroma and grooving), out-of-distribution robustness (description splicing and mixing), and a pairwise listening study.",
+        "datasets": "LakhMIDI dataset",
+        "architecture": "A Transformer sequence-to-sequence model (4 encoder layers, 6 decoder layers, relative positional embeddings, bar and beat-position embeddings; 44.6M parameters) combined with a bar-level Transformer VQ-VAE (4 encoder, 6 decoder layers; 43.7M parameters with 16 latent codes and codebook size 2048).",
+        "results": "FIGARO outperforms prior baselines (Choi et al., 2020; MuseMorphose; unconditional Music Transformer) in multi-track symbolic style transfer, description fidelity, and fluency (achieving a perplexity of 1.705). It shows strong robustness against out-of-distribution conditions like bar splicing and mixing. In a subjective listening study with 691 participants and 7,569 comparisons, FIGARO won pairwise against each baseline with p < 10^-7 and achieved a 39.3% win rate against real human-composed music.",
+        "limitations": "The model is strictly conditional and requires creative description inputs rather than operating unconditionally. REMI+ cannot represent expressive timing/human performance nuances like continuous tempo drift and micro-offsets. The training data predominantly represents Western music.",
+        "future_work": "Training an unconditional prior model to generate descriptions automatically to reduce manual input; adding new conditioning functions such as melody control; and extending the description-to-sequence learning objective to other domains such as natural language story generation.",
+        "keywords": [
+            "Symbolic Music Generation",
+            "Transformer",
+            "Controllable Generation",
+            "Description-to-Sequence Learning",
+            "VQ-VAE",
+            "REMI+",
+            "Style Transfer",
+            "Representation Learning"
+        ]
+    },
+    "generated_at": "2026-09-27 17:46:18.362477"
+}

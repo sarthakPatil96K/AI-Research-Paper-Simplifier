@@ -15,7 +15,7 @@ load_dotenv()
 class GeminiProvider(BaseLLM):
     def __init__(self):
         self.client = genai.Client()
-        self.model_name = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+        self.model_name = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
         self.max_retries = 4
         self.base_delay = 2.0
 

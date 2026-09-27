@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --bg: #0a0b0f;
+  --bg-elev: #12141c;
+  --bg-hover: #181b25;
+  --border: #22252f;
+  --border-strong: #2e323e;
+  --fg: #eceef2;
+  --fg-muted: #8b93a7;
+  --fg-dim: #565c6e;
+  --accent: #7c8cff;
+  --accent-hover: #93a1ff;
+  --accent-soft: rgba(124, 140, 255, 0.12);
+  --success: #4ade80;
+  --error: #f87171;
+  --warn: #fbbf24;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root { height: 100%; }
+
+body {
+  font-family: "Inter", -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  transition: all 0.15s ease;
+}
+
+input, textarea {
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+::selection { background: var(--accent-soft); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--fg-dim); }
+
+/* Utility */
+.mono { font-family: "JetBrains Mono", monospace; }
+.muted { color: var(--fg-muted); }
+.dim { color: var(--fg-dim); }

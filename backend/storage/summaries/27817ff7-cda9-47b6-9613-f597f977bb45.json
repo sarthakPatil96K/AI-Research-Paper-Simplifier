@@ -1,0 +1,24 @@
+{
+    "paper_id": "27817ff7-cda9-47b6-9613-f597f977bb45",
+    "summary": {
+        "title": "Financial Statement Analysis Using Machine Learning and Deep Learning",
+        "objective": "To explore the use of Machine Learning and Deep Learning algorithms in analyzing and predicting financial performance from company statements to forecast revenue trends, classify financial health, detect fraudulent patterns, and automate ratio analysis.",
+        "problem": "Traditional manual spreadsheet-based methods and static trend analysis fall short in uncovering deep insights, handling complex and vast amounts of financial data, detecting anomalies, and providing real-time predictions.",
+        "methodology": "A quantitative and predictive analytical methodology utilizing secondary data from publicly available company financial statements over a 5-to-10-year period. Data is cleaned and preprocessed using Python (Pandas, NumPy, OpenPyXL), followed by feature engineering of financial ratios. Machine learning and deep learning models are applied for prediction and forecasting, evaluated using RMSE, MAE, and R2 metrics, and visualized via Matplotlib, Seaborn, and Power BI dashboards.",
+        "datasets": "Publicly available company financial statements, annual reports, financial disclosures, and stock exchange databases spanning a 5-to-10-year period.",
+        "architecture": "Machine learning and deep learning models including Linear Regression, Random Forest, XGBoost, Support Vector Machines, Artificial Neural Networks (ANN), and Long Short-Term Memory (LSTM) / Gated Recurrent Units (GRU) networks.",
+        "results": "The models provided high-accuracy forecasts of financial indicators like revenue, net income, and profitability ratios with low error margins. LSTM effectively captured temporal dependencies for time-series forecasting, while anomaly detection flagged inconsistencies and K-Means clustering grouped companies by financial similarity.",
+        "limitations": "Not specified",
+        "future_work": "Not specified",
+        "keywords": [
+            "Financial Statement Analysis",
+            "Machine Learning",
+            "Deep Learning",
+            "LSTM",
+            "Random Forest",
+            "Financial Forecasting",
+            "Anomaly Detection"
+        ]
+    },
+    "generated_at": "2026-09-27 20:31:29.246094"
+}

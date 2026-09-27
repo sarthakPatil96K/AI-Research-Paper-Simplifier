@@ -1,0 +1,24 @@
+{
+    "paper_id": "cf325c84-fb0b-42aa-8632-92ecdd19a195",
+    "summary": {
+        "title": "FIGARO: Controllable Music Generation Using Expert and Learned Features",
+        "objective": "To introduce a controllable symbolic music generation model that uses high-level, human-interpretable conditioning via description-to-sequence learning.",
+        "problem": "Current symbolic music generative models achieve high sample quality, but it remains difficult for users to control the output to match expectations because high-level, human-interpretable conditioning is lacking.",
+        "methodology": "Proposes description-to-sequence learning, which automatically extracts fine-grained, human-interpretable features (descriptions) from music and trains a sequence-to-sequence Transformer model to reconstruct the original sequence given only the description. Combines hand-crafted expert descriptions with learned representations via VQ-VAE.",
+        "datasets": "LakhMIDI",
+        "architecture": "Transformer auto-encoder (4 encoder layers, 6 decoder layers) combined with a bar-level VQ-VAE for learned features and REMI+ input representation.",
+        "results": "Achieves state-of-the-art performance in multi-track symbolic music generation in terms of style transfer, sample quality, and adherence to input conditions, outperforming existing baselines in listening studies and objective metrics.",
+        "limitations": "Requires creative input in the form of a description rather than being fully unconditional; lacks explicit melody conditioning control.",
+        "future_work": "Training a prior model to generate descriptions unconditionally, adding new description functions (such as melody conditioning), and applying the description-to-sequence objective to other domains like natural language story generation.",
+        "keywords": [
+            "symbolic music generation",
+            "controllable generation",
+            "Transformer",
+            "description-to-sequence learning",
+            "expert features",
+            "learned features",
+            "multi-track music"
+        ]
+    },
+    "generated_at": "2026-09-27 18:46:10.549090"
+}

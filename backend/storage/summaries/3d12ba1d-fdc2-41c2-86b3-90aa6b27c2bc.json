@@ -1,0 +1,23 @@
+{
+    "paper_id": "3d12ba1d-fdc2-41c2-86b3-90aa6b27c2bc",
+    "summary": {
+        "title": "RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models",
+        "objective": "To introduce RAGTruth, a large-scale corpus for analyzing word-level hallucinations in retrieval-augmented generation (RAG) applications, benchmark existing hallucination detection methods, and demonstrate the effectiveness of fine-tuning a small LLM for hallucination detection and suppression.",
+        "problem": "Large language models (LLMs) still present unsupported or contradictory claims relative to retrieved contents despite using RAG, and there is a lack of high-quality, large-scale datasets specifically designed for word-level hallucination detection in RAG settings.",
+        "methodology": "Created the RAGTruth dataset comprising nearly 18,000 naturally generated responses from diverse LLMs (open-source and closed-source) across three tasks (Question Answering, Data-to-text Writing, and News Summarization) with meticulous manual word-level and span-level annotations. Evaluated mainstream hallucination detection methods (such as prompts using GPT-3.5/4, SelfCheckGPT, and LMvLM) and fine-tuned Llama-2-13B on the dataset for hallucination detection and mitigation.",
+        "datasets": "RAGTruth (comprising 2,965 total data instances, nearly 18,000 responses, derived from MS MARCO, Yelp Open Dataset, and CNN/Daily Mail plus recent news articles).",
+        "architecture": "Llama-2-13B (fine-tuned for hallucination detection), alongside evaluations on GPT-3.5-turbo, GPT-4-turbo, Llama-2-7B/13B/70B-chat, and Mistral-7B-Instruct.",
+        "results": "Fine-tuning Llama-2-13B on RAGTruth achieved an average response-level F1 score of 78.7% and a span-level F1 score of 52.7%, outperforming or competing with prompt-based approaches using GPT-4. Furthermore, using the fine-tuned detector to select responses significantly reduced hallucination rates across models (e.g., up to 63.2% reduction for smaller models and 51.0% for GPT models).",
+        "limitations": "The study is the first attempt to benchmark hallucinations within the RAG setting, leaving open the need to benchmark the generality capability of the trained detection model across different datasets and contexts, and to evaluate manual versus synthetic data strategies.",
+        "future_work": "Assess the generality capability of the detection model across different datasets and contexts, evaluate the effectiveness of manual annotations versus synthetic data, and explore combining both approaches.",
+        "keywords": [
+            "Retrieval-Augmented Generation",
+            "Hallucination Corpus",
+            "Large Language Models",
+            "Hallucination Detection",
+            "Trustworthy AI",
+            "Dataset"
+        ]
+    },
+    "generated_at": "2026-09-27 20:12:11.307540"
+}
