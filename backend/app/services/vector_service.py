@@ -15,6 +15,11 @@ class VectorService:
         os.makedirs(self.META_DIR, exist_ok=True)
 
     def create_index(self, paper_id, embeddings):
+        print("=" * 60)
+        print("📦 VECTOR SERVICE STARTED")
+        print("=" * 60)
+        print(f"Paper ID: {paper_id}")
+        print(f"Embeddings Received: {len(embeddings)}")
 
         vectors = np.array(
             [e["embedding"] for e in embeddings],
@@ -60,7 +65,10 @@ class VectorService:
         )
 
         with open(metadata_path, "wb") as f:
-
+            print("✅ Metadata Saved")
+            print("=" * 60)
+            print("VECTOR SERVICE FINISHED")
+            print("=" * 60)
             pickle.dump(metadata, f)
 
         return index_path

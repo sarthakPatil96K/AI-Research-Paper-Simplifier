@@ -15,12 +15,11 @@ def semantic_search(request: SearchRequest):
         )
     )
 
-    results = (
-        container.vector_service.search(
-            paper_id=request.paper_id,
-            query_embedding=query_embedding,
-            top_k=request.top_k
-        )
+    results = container.hybrid_search_service.search(
+        paper_id=request.paper_id,
+        embedding=query_embedding,
+        query=request.question,
+        top_k=request.top_k
     )
 
     return {

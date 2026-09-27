@@ -43,7 +43,6 @@ async def upload_pdf(file: UploadFile = File(...)):
     # Process the paper
     result = container.paper_service.process_pdf(
         file_path=file_path,
-        metadata=metadata
     )
 
     # Return response
